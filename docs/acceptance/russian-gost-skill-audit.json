@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "skill": "plain-talk",
+      "verdict": "no-change",
+      "passes": {
+        "invocation": "pass",
+        "hierarchy": "pass",
+        "steering": "pass",
+        "pruning": "pass",
+        "goal_preservation": "pass"
+      },
+      "overall_input": "A user request to explain, rewrite or audit supplied text in its requested language; the approved style addition is GOST wording guidance for Russian passages only, on top of STE.",
+      "overall_outcome": "Meaning-preserving text or read-only audit findings in the requested language, using the STE baseline and the shared Russian-only wording guidance where applicable.",
+      "local_subgoal": "Apply the shared style to the given text, retain facts and exact technical names, and report changes in rewrite mode.",
+      "completion_proxies": [
+        "A valid skill package",
+        "A shorter text",
+        "A clean doc-lint result",
+        "A completed structural audit"
+      ],
+      "required_outcome_evidence": [
+        "Meaning, code, commands, quotes and names are preserved",
+        "GOST guidance applies only to Russian passages, including within mixed-language input",
+        "STE remains the baseline, and the project's terminology and chat register retain their stated precedence",
+        "Audit mode gives findings without rewriting the input",
+        "Remaining lint errors have stated reasons; rewrite mode reports changes"
+      ],
+      "evidence": "Reviewed all five improve-skills passes and skill-creator's scope, discovery, disclosure and validation criteria. SKILL.md already loads references/plain-style.md, applies sections 1-5 and defines a read-only audit path. Section 2.4 is the sole source of Russian GOST guidance; README files point to it. quick_validate.py, the strict structural audit and make test passed. These checks validate packaging and documented scope, not a measured behavioral improvement. LLM Obsidian's instruction-lint, skill-budget, codex-adapter and release-acceptance gates are not present in this standalone repository; its make test covers lint, links and plugin manifests.",
+      "change": "None in the skill entrypoint. The authorized Russian-only addition is in the existing shared style reference. No further quality correction or deferred scope expansion was identified.",
+      "behavior_proof": "SKILL.md, agents/openai.yaml and the linter are unchanged. The three modes, implicit invocation, meaning-preservation rules, lint threshold, output precedence and audit boundary are preserved. The only approved behavior addition is the Russian wording guidance in the shared reference."
+    },
+    {
+      "skill": "tech-doc",
+      "verdict": "no-change",
+      "passes": {
+        "invocation": "pass",
+        "hierarchy": "pass",
+        "steering": "pass",
+        "pruning": "pass",
+        "goal_preservation": "pass"
+      },
+      "overall_input": "A request to write or audit named technical documentation for specified readers and languages, with repository or configuration sources; the approved style addition applies only to Russian passages.",
+      "overall_outcome": "Grounded documentation with usable procedures, or read-only audit findings, using STE as the baseline and GOST wording guidance for Russian passages only.",
+      "local_subgoal": "Write or audit only the approved documentation, trace technical facts to sources and report checks and unverified facts.",
+      "completion_proxies": [
+        "A valid skill package",
+        "A document file exists",
+        "EN/RU structural parity passes",
+        "A clean doc-lint result"
+      ],
+      "required_outcome_evidence": [
+        "Every technical fact has a source or an unverified mark and report entry",
+        "State-changing steps have expected results and realistic failure branches",
+        "Russian wording follows shared section 2.4 without applying GOST to English passages or changing document structure",
+        "Commands and project terminology remain intact across language pairs",
+        "Audit mode changes no documents, and procedures are claimed to work only when actually run"
+      ],
+      "evidence": "Reviewed all five improve-skills passes and skill-creator's scope, discovery, disclosure and validation criteria. SKILL.md already loads the shared plain-talk style, accepts EN/RU input, preserves IDs and defines write and read-only audit paths. The shared section 2.4 makes the language condition explicit without duplicating GOST rules in this skill. quick_validate.py, the strict structural audit and make test passed. The existing English README length warning is outside the changed text. No runtime evaluation or behavioral uplift is claimed; standalone repository gates replace unavailable LLM Obsidian-specific gates.",
+      "change": "None in the skill entrypoint. The existing reference supplies the authorized Russian wording addition. No further quality correction or deferred scope expansion was identified.",
+      "behavior_proof": "SKILL.md, agents/openai.yaml, doc-structure.md and the linter are unchanged. Invocation, modes, documentation-only edit scope, source checks, redaction, no-commit/push/publish boundary and completion reporting are preserved. GOST supplements wording only for Russian passages within the existing document formats."
+    }
+  ]
+}

@@ -5,6 +5,11 @@
 Two agent skills for plain technical writing in Claude Code and Codex. The
 target is about 80 % of ASD-STE100 Simplified Technical English.
 
+STE remains the baseline for both languages. Russian passages also follow
+the wording guidance of GOST R 2.105-2019, clauses 5.2.2–5.2.3.
+The scope and terminology exceptions are in the
+[shared style rules](skills/plain-talk/references/plain-style.md#2-words).
+
 | Skill | What it does |
 |---|---|
 | `plain-talk` | Rewrites, explains or audits text. Removes AI filler: banned words, empty phrases and 16 typical patterns |

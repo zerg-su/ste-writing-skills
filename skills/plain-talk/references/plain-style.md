@@ -42,8 +42,14 @@ over this file. Code, commands, quotes and file names stay as they are.
 
    NOTE: STE approves `approximately`. Do not replace it.
 3. Give numbers with units. Put exact names (files, commands, keys) in backticks.
-4. Russian: keep technical terms in English, or in the form the input already
-   uses (`реплика-сет`, `бэкап`). Do not translate them.
+4. Russian passages only: supplement the STE rules with
+   [GOST R 2.105-2019](https://protect.gost.ru/gost/details/0dd3cdfa-c15a-47b3-9e3b-4a90a43005c8),
+   clauses 5.2.2–5.2.3, as a guide to technical wording.
+   Use concise, unambiguous wording and consistent, established terms.
+   Distinguish requirements from permissions and possibilities.
+   Apply this guidance within the document formats and chat register defined here.
+   Project terminology takes precedence: keep technical terms in English, or in
+   the form the input already uses (`реплика-сет`, `бэкап`). Do not translate them.
 
 ## 3. Word lists (machine-read by `doc_lint.py`)
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Both skills: add GOST R 2.105-2019 wording guidance for Russian passages
+  only, on top of the STE baseline. Project terminology and chat register
+  keep their defined scope.
+
 ## 1.0.1 — 2026-10-16
 
 - `doc_lint.py`: a table cell with an ID and other words now needs a gloss.
