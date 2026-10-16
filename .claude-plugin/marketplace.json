@@ -1,0 +1,26 @@
+{
+  "name": "ste-writing-skills",
+  "owner": {
+    "name": "zerg-su",
+    "url": "https://github.com/zerg-su"
+  },
+  "metadata": {
+    "description": "Plain technical writing skills for Claude Code: plain-talk and tech-doc.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ste-writing-skills",
+      "source": "./",
+      "description": "plain-talk: rewrite, explain or audit text in plain technical style. tech-doc: write or audit runbooks and READMEs with verified commands.",
+      "version": "1.0.0",
+      "author": {
+        "name": "zerg-su",
+        "url": "https://github.com/zerg-su"
+      },
+      "homepage": "https://github.com/zerg-su/ste-writing-skills",
+      "repository": "https://github.com/zerg-su/ste-writing-skills",
+      "license": "MIT"
+    }
+  ]
+}

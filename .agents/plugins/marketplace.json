@@ -1,0 +1,20 @@
+{
+  "name": "ste-writing-skills",
+  "interface": {
+    "displayName": "STE Writing Skills"
+  },
+  "plugins": [
+    {
+      "name": "ste-writing-skills",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

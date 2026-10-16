@@ -1,0 +1,22 @@
+{
+  "name": "ste-writing-skills",
+  "version": "1.0.0",
+  "description": "Plain technical writing for AI agents: rewrite or audit text without AI filler, and write runbooks and READMEs with verified commands. About 80% ASD-STE100.",
+  "author": {
+    "name": "zerg-su",
+    "url": "https://github.com/zerg-su"
+  },
+  "homepage": "https://github.com/zerg-su/ste-writing-skills",
+  "repository": "https://github.com/zerg-su/ste-writing-skills",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "documentation",
+    "runbook",
+    "ste",
+    "asd-ste100",
+    "plain-language",
+    "ai-slop",
+    "russian"
+  ]
+}
