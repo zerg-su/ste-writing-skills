@@ -55,6 +55,9 @@ cp -R ste-writing-skills/skills/plain-talk ste-writing-skills/skills/tech-doc ~/
 | Write a runbook | `/ste-writing-skills:tech-doc write <topic>` | `$ste-writing-skills:tech-doc write <topic>` |
 | Check a README | `/ste-writing-skills:tech-doc audit README.md` | `$ste-writing-skills:tech-doc audit README.md` |
 
+The table shows the names after a plugin install. After a copy without a
+plugin, the Claude Code names are `/plain-talk` and `/tech-doc`.
+
 The agent can also select a skill from the request text, for example
 "explain this in plain words" or "write a runbook".
 

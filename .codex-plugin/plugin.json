@@ -1,6 +1,6 @@
 {
   "name": "ste-writing-skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plain technical writing for AI agents: rewrite or audit text without AI filler, and write runbooks and READMEs with verified commands. About 80% ASD-STE100.",
   "author": {
     "name": "zerg-su",

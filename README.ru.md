@@ -55,6 +55,9 @@ cp -R ste-writing-skills/skills/plain-talk ste-writing-skills/skills/tech-doc ~/
 | Написать runbook | `/ste-writing-skills:tech-doc write <тема>` | `$ste-writing-skills:tech-doc write <тема>` |
 | Проверить README | `/ste-writing-skills:tech-doc audit README.md` | `$ste-writing-skills:tech-doc audit README.md` |
 
+В таблице — имена после установки плагина. После копирования без плагина
+имена в Claude Code — `/plain-talk` и `/tech-doc`.
+
 Агент выбирает скилл и по тексту запроса, например «объясни проще» или
 «напиши ранбук».
 

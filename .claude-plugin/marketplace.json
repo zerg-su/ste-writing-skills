@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Plain technical writing skills for Claude Code: plain-talk and tech-doc.",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "ste-writing-skills",
       "source": "./",
       "description": "plain-talk: rewrite, explain or audit text in plain technical style. tech-doc: write or audit runbooks and READMEs with verified commands.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "zerg-su",
         "url": "https://github.com/zerg-su"

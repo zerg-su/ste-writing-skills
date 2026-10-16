@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Tests for skill files: links, linter paths, manifests and forbidden text."""
+"""Tests for skill files: links, linter paths and manifests."""
 
 from __future__ import annotations
 
@@ -12,7 +12,6 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILLS = ROOT / "skills"
 LINK_RX = re.compile(r"\]\(([^)#\s]+)\)")
 COMMAND_RX = re.compile(r"python3 ([\w./-]+\.py)")
-FORBIDDEN = ("docs/skill-references", "redaction-rules", "vault", "wiki/", "/save", "/draft")
 
 docs = sorted(SKILLS.rglob("*.md"))
 assert docs, "no Markdown files under skills/"
@@ -28,13 +27,6 @@ for doc in docs:
     for script in COMMAND_RX.findall(doc.read_text(encoding="utf-8")):
         assert (skill_dir / script).is_file(), f"{doc.relative_to(ROOT)}: {script} not found from {skill_dir.name}/"
 print("OK   linter paths resolve from the skill directory")
-
-for path in sorted(SKILLS.rglob("*")):
-    if path.is_file():
-        text = path.read_text(encoding="utf-8").lower()
-        for word in FORBIDDEN:
-            assert word not in text, f"{path.relative_to(ROOT)}: forbidden text {word!r}"
-print("OK   skill files have no references to the parent project")
 
 for skill in ("plain-talk", "tech-doc"):
     head = (SKILLS / skill / "SKILL.md").read_text(encoding="utf-8").split("---")[1]

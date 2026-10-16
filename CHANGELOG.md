@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.1 — 2026-10-16
+
+- `doc_lint.py`: a table cell with an ID and other words now needs a gloss.
+  Only IDs and the words "then", "and", "or" (also "затем", "потом", "и",
+  "или") are exempt.
+- `doc_lint.py`: empty parentheses after an ID are not a gloss.
+- `doc_lint.py`: fences of four or more backticks and tilde fences keep their
+  language, so `--pair` compares their commands. A shorter fence inside a
+  longer fence does not close it.
+- README: names of the skills after a manual copy.
+
 ## 1.0.0 — 2026-10-16
 
 - `plain-talk`: rewrite, explain or audit text in plain technical style.
